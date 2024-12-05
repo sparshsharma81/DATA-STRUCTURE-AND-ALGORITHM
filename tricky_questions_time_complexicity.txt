@@ -1,0 +1,89 @@
+public class TrickyTimeSpaceComplexityQuestions {
+public static void question1(int n) {
+for (int i = 1; i < n; i *= 2) {
+for (int j = 0; j < n; j++) {
+System.out.println(i + j);
+}
+}
+}
+
+//in this outer loop time complexicity is O(log n)---
+inner loop runs between j = 0 to j<n -- so this has exactly n iterations --- n 
+and then for every iterations of outer loop ... the inner loop runs n.log(n)
+so resulting time complexicity = O(n.logn)
+
+
+
+now the space complexicity -- since the variables are written inside the loop -- so the space complexicity is O(1)
+
+TIME COMPLEXICITY ---- O(n logn)
+SPACE COMPLEXICITY --- 0(1)
+
+
+
+
+
+public static void question2(int n) {
+ArrayList<Integer> list = new ArrayList<>();
+for (int i = 0; i < n; i++) {
+list.add(i);
+}
+
+System.out.println(list);
+}
+SPACE -- o(N)
+TIMME -- o(N)
+
+
+
+
+public static int question3(int n) {
+if (n <= 1) return n;
+return question3(n - 1) + question3(n - 1);
+}
+
+time-complexicity ----  O(2^n)
+space-complexicity == O(n)
+
+
+
+public static int question4(int n) {
+if (n == 0) return 1;
+return n * question4(n - 1);
+}
+
+time-complexicity  --- O(n)
+space-complexicity ---O(n)
+
+
+
+
+
+public static void question5(int n) {
+int[] arr = new int[n];
+for (int i = 0; i < n; i++) {
+arr[i] = i * i;
+}
+System.out.println(arr);
+}
+}
+
+time- complexicity == O(n)
+
+space- complexicity == O(n)
+
+
+
+
+
+O(log n) + O(n) ----- in the case of maximum time complexicity --- choose the maximum --here O(n)
+
+java is compiled-- covereted into bytes---
+there after it is converted into code.. by jdm
+
+memory allocation on heap--
+int[] arr = new arr[5];
+
+---address pointing to first element of arr --- 1000
+
+memory allocation on stack--

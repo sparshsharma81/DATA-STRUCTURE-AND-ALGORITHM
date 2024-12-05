@@ -1,0 +1,30 @@
+int x = 1;-- 
+time and space COMPLEXICITY --- O(1)
+
+similarly
+int x = 2; 
+int y = 2; 
+int z = 3;
+they have time and space complexicity -- O(3)
+
+O(3) = O(1)
+
+
+in case of loops;;;
+for(int i =0 ; i<n; i++){
+    x+=6;
+
+}
+
+for(int j = 0 ; j<x;j++){
+    y+=7;
+}
+
+this is known as linear search --- O(n) = O(2n) 
+
+
+
+O(1) ---- constant time and space complexicity.
+O(n) --- linear time/space complexicity 
+O(n^2) --- quadratic time complexicity;
+O(log n)--- logarithmic time complexicity

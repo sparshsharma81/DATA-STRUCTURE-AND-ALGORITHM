@@ -1,0 +1,10 @@
+notations...
+
+worst case--O -- upper bound
+
+average --- theta ---
+
+best case -- omega --
+
+in most cases.. only worst case --- big o notation is used---
+
