@@ -1,0 +1,3 @@
+4-sized array(integer)----- total memory --- 4 * 4 = 16bytes
+
+scanner--- ek buffer leke chalta hai---
