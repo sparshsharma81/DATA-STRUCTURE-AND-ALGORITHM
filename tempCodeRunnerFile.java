@@ -1,1 +1,1 @@
-input.array(k);
+arr
