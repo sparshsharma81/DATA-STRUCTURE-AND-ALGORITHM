@@ -4,6 +4,8 @@ public class number_of_elements {
     public static void main(String args[]){
         System.out.print("Enter the size of array: ");
         Scanner sc = new Scanner(System.in);
+        //Collections.sort(array) -- to sort the array
+        
         int a = sc.nextInt();
 
         int[] arr = new int[a];
