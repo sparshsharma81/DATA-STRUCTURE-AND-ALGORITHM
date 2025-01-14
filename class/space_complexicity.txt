@@ -1,0 +1,12 @@
+space complexicity --
+amount of sapce taken by the user as funciton of input size(n)---
+
+
+basically the input does not count in the input search---
+we only count the auxilary space 
+
+basically -- the extra space which is occupied -- that counts in that--
+
+
+int sum = 0;
+for(int i =0; i<x;i++)  

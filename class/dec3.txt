@@ -1,0 +1,100 @@
+                            data structure---
+
+                            1.primitive data types--
+                            int , char , bool, float
+                            2.non-primitive data type--
+                            data types: arrays, linked-list , stacks , queues, vector
+
+
+
+                staic data structure -- arrays,,,
+                dynamic data structure -- vectors
+
+                    
+                    linear ---          ek ke baad ke---- arrays, stacks 
+                    non-linear ----         trees , graphs  , map
+
+
+
+                    ALGORITHMS---
+                    space complexicity---
+                    program run ho gaya...uss runtime me usne kitni space li 
+                    space taken by the program while execution[excluding input size]
+
+
+                    time complexicity---kitna time lag raha hai uss program ko execute karne me....
+                    int x = 5; the time complexicity = 1; meaning constant--
+
+
+                    while(n>0){
+                        n/=2;
+
+                    }
+                    ---------the time complexicity of this is log(n);
+
+
+
+                    for(int i = 0; i<=n ; i++){
+                        x+=5;
+
+                    }
+                    --the time complexicity of this is --- n
+
+
+
+                    for(int i =0 ; i<m; i++){
+                        while(n>0){
+                            n/=2;
+
+                            ------O(log(n)) + O(m) ---- so time complexity ---- m 
+                            so if there is = then we need to choose the maximum--- ...so answer is m 
+                            
+                        }
+                    }
+
+
+
+                    for(int i = 0 ; i<m;i++){
+                        for(int j =0 ; j<n ; j++){
+                            x+=5;
+                            -----iski time complexity == mn
+                        }
+                    }
+
+
+
+
+
+                    for(int i = 0; i<2n ; i++){
+                        x+=5;
+
+                    }
+                    time complexicity --- n --- here time complexicity does not depend on the inner part---
+
+
+
+
+
+                    for(int i =0; i<x/2; i++){
+                        x+=5;
+
+
+                    }
+
+
+
+                    for(int i =0 ; i <n ; i++){
+
+                    }
+
+                    ---create an array of size m;
+                    --take input of m integers;
+                    ---calculate sum of this array-----
+                    
+                   space complexicity --- m
+                    time complexicity --- nm
+
+
+                    TIME COMPLEXICITY --- 
+                    
+                    
