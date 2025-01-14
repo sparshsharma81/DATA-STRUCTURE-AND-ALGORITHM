@@ -1,3 +1,4 @@
+import java.util.*;
 public class quick_sort1 {
     static void swap(int[] arr, int a , int b){
        int temp = arr[a];
@@ -14,7 +15,8 @@ static int partision(int[] arr , int low , int high){
         }
     }
     index++;
-    swap(arr,index,high); //this will swap the pivot and place it in its right index...since we have assumed that the pivot is in last index
+    swap(arr,index,high); //this will swap the pivot and place it in its right index...
+    //since we have assumed that the pivot is in last index
     return index;
 }
 static void quicksort(int[]arr , int low, int high){
@@ -35,9 +37,21 @@ static void display(int[] arr){
 }
     public static void main(String[] args) {
         //now we are doing the quick sort algorithm....
-        int[] arr = {4,2,7,8,9,3,1,6};
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter the size of array: ");
+        
+
+        // int[] arr = {4,2,7,8,9,3,1,6};
+        // display(arr);
+        // System.out.println("");
+        
+        int a = sc.nextInt();
+        int[] arr= new int[a];
+        System.out.println("Great..now enter the array..");
+        for(int i=0;i<arr.length;i++){
+            arr[i] = sc.nextInt();
+        }
         display(arr);
-        System.out.println("");
         System.out.println("Now after the quick sort the array is...");
         quicksort(arr,0, arr.length-1);
         System.out.print("Sorted array////");
