@@ -24,7 +24,7 @@ class inverse_of_number{
     }
         // String b = Integer.toString(a);
       
-       System.out.print(new String(arr))
+       System.out.print(new String(arr));
 
 
     }
