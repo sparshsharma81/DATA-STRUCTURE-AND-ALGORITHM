@@ -1,1 +1,1 @@
- return a;
+&& temp.next==null
