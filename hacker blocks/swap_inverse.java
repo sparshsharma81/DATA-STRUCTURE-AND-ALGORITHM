@@ -1,9 +1,9 @@
 public class swap_inverse {
     public static void main(String[] args) {
     
-    
-    int[] arr = {3,2,1,4,5}; // Example array
-
+    int n = 32145;
+    // int[] arr = {0,3,2,1,4,5}; // Example array
+    int[] arr = {0,5,4,1,2,3};
     for (int i = 1; i < arr.length; i++) {
          // Ensure arr[i] is within bounds
             int temp = arr[i];
@@ -12,7 +12,7 @@ public class swap_inverse {
         }
     
     // Print the modified array
-   for(int i=0;i<arr.length;i++){
+   for(int i=1;i<arr.length;i++){
     System.out.print(arr[i]+" ");
    }
 
