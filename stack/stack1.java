@@ -15,6 +15,8 @@ public class stack1{
         Stack<Integer>s1 = new Stack<>();
         s1.push(10);
         s1.push(20);
+        st.push(30);
+        st.push(40);
         System.out.print(s1); //----[10, 20]
         
     }
