@@ -1,0 +1,42 @@
+example 
+8/2 - (3*4) + 7
+
++-/82*347
+
+postfix ---- name of final string
+except operands and 'c' push everything to stack
+append every operand directly to postfix string 
+while pushing the operators inot stack
+if current operator has less or equal precedence, then peek() then pop() the stack and append it to the postfix
+string, repeat this until the current operator's precedence is greater than the peek()
+or stack is empty 
+
+
+at the end of stack operation, push the operator 
+when the traversal in infix string is over, pop() the stack and append it too postfix string 
+
+directly push opening bracket into stack 
+
+precedence for bracket is not counted...
+
+if current is closing bracket, don't push it into stack, instead pop() everything from stack while peek() ='c'
+and at the end pop () to 'c'
+
+
+
+
+
+
+infix to prefix using stack
+
+prefix using stack:
+
+1.reverse the infix string
+2.correct the brackets
+3.apply operations as same as postfix, except while pushing an operator to stack, only pop() when current operator 
+has less precedence tan peek()
+
+Reverse the final string formed
+
+
+evaluate -- "(A+B*C) - D/(E+F)" 

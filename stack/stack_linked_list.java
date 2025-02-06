@@ -21,6 +21,34 @@ public class stack_linked_list {
             size++;
         }
 
+        int pop(){
+            if(head==null) return -1;
+            int x = head.val;
+            head = head.next;
+            return x;
+
+        }
+        int peek(){
+            if(head==null) return -1;
+            return head.val;
+        }
+        boolean isEmpty(){
+            if(head == null) return true;
+            return false;
+        }
+       int size(){
+        return size;
+       }
+       void displayreverse(Node temp){
+        // temp = head;
+        if(temp == null) return;
+
+        displayreverse(temp.next);
+        System.out.print(temp.val+ " ");//this code will print the string in reverse order
+        }
+       
+       
+
         void display(){
             Node temp = head;
             while(temp!=null){
@@ -43,6 +71,15 @@ public class stack_linked_list {
         s1.push(4);
         s1.push(6);
         s1.display();
+        System.out.println("the top most element is: "+s1.peek());
+        System.out.println("the stack is empty or not: "+s1.isEmpty());
+        System.out.println("pop:"+s1.pop());
+        s1.push(9);
+        System.out.println("Pushing element");
+        s1.display();
+        System.out.println("printing the stack in reverse order...");
+        s1.displayreverse(s1.head);
+
     }
     
 }

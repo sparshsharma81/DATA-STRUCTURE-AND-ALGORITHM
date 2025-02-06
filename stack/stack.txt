@@ -3,3 +3,26 @@ if stack is empty and we are trying to peek or pop..then it will show stack unde
 if stack is full and we are trying to push element..then it will give stack overflow error
 the overflow occur when the memory of stack is full or if we are implementing it using array---array has fixed memory...
 so it will show stack overflow error
+
+
+
+advantages of array implementation over linked list in stack...
+
+1.size --- for every element --- space taken is one block ---for fixed size stack 
+
+
+disadvantage---stack can overflow 
+
+
+
+advantages of linked list implementation of stacks over array
+ 1.it has unlimited size
+
+ disadvantage -- size two data member , in display function -- we have to print the string in reverse order--- 
+ ---time and space complexicity increase...
+
+
+
+ questions --- infix , postfix , prefix , inorder, postorder
+ balance bracket, next greatest element, largest area in rectangle and histogram...
+ 
