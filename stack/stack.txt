@@ -1,0 +1,5 @@
+if stack is empty and we are trying to peek or pop..then it will show stack underflow exception
+
+if stack is full and we are trying to push element..then it will give stack overflow error
+the overflow occur when the memory of stack is full or if we are implementing it using array---array has fixed memory...
+so it will show stack overflow error
