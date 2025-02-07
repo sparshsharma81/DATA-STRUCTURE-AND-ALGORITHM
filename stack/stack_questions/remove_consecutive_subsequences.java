@@ -1,6 +1,29 @@
 // package stack_questions;
 
+import java.util.Stack;
+
 public class remove_consecutive_subsequences {
+    public static int remove(int[]arr){
+        int n = arr.length;
+        Stack<Integer> s1 = new Stack<>();
+        for(int i=0;i<n;i++){
+            if(s1.size()==0 || s1.peek()!=arr[i]){
+                s1.push(arr[i]);
+            }
+            if(i==n-1|| arr[i]!=arr[i+1]){
+                s1.pop();
+            }
+        }
+        int[] res = new int[s1.size()];
+        int m = res.length;
+        for(int i=n-1;i>0;i--){
+            arr[i] = st.pop();
+        }
+        return res;
+    }
+
+
+    }
     public static void main(String[] args) {
         /*
          given a sequence of numbers. Remove all the consecutive subseqence of length greater than
@@ -15,8 +38,10 @@ public class remove_consecutive_subsequences {
 
          */
         int[] arr = {1,2,2,3,10,10,10,4,4,4,5,7,7,2};
-        int[] result  = new int[arr.length];
-        Stack<Integer>s1 = new Stack<>();
+        int[] result  = remove(arr);
+        for(int i=0;i<result.length;i++){
+            System.out.print(arr[i] +" ");
+        }
         //we can do this using the stack approach;;
         /*
          basically the main idea is first we push each elements into stack and if
@@ -25,4 +50,4 @@ public class remove_consecutive_subsequences {
          */
     }
     
-}
+
