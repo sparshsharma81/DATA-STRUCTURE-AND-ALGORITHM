@@ -1,0 +1,5 @@
+celebrity problem , sliding window maximum
+
+9 - 5 + 3*4 /6
+
+convert ascii to number ---- ascii - 48
