@@ -6,5 +6,9 @@ public class largest_rectangle_histogram {
          rectangle of histogram
          
          */
+
+         /*
+          so our main approach towards this is
+          */
     }
 }
