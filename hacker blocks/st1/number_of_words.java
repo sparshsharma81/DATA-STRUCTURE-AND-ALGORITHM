@@ -32,3 +32,7 @@ public class number_of_words {
     }
     }
 
+
+
+    //this problem can be easily solved using recurssion
+    
