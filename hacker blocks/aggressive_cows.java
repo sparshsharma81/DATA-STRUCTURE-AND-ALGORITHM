@@ -80,6 +80,10 @@ class aggressive_cows{
         /*
          minimum possible distance = 0;
          maximum possible distance = nums[n-1] - nums[0] ----last - first
+
+
+         basically we need to place the cows at certain position
+         
          
          */
 
