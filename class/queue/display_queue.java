@@ -22,6 +22,8 @@ public class display_queue {
         }
         while(!q2.isEmpty()){
             q1.add(q2.poll());
+
+            //poll is similar to peek
         }
         
 
