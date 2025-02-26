@@ -1,0 +1,4 @@
+there are three types of queue
+1.circular queue --implementation is done using ciruclar array
+2.deque ---double ended queue -- add and removeal from start and end 
+3. priority queue ---- data is stored in user-defined sorted manner ---heap --min and max heap
