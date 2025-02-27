@@ -1,0 +1,43 @@
+if first element of deque is not in range [i-k+1,i] both inclusive , then remove the first element of deque
+
+to track indices of negative elements, push indices of negative elements into deque
+
+
+
+1. Using ArrayDeque (Most Common)
+java
+Copy
+Edit
+Deque<Integer> deque = new ArrayDeque<>();
+Fast performance (Array-based implementation).
+Does not allow null elements.
+Efficient for both ends (O(1) insertion/deletion at front and back).
+2. Using LinkedList
+java
+Copy
+Edit
+Deque<Integer> deque = new LinkedList<>();
+Doubly Linked List implementation.
+Allows null elements.
+Faster insertion/deletion than ArrayDeque in some cases.
+3. Using ConcurrentLinkedDeque (Thread-safe)
+java
+Copy
+Edit
+Deque<Integer> deque = new ConcurrentLinkedDeque<>();
+Thread-safe implementation.
+Non-blocking, uses a lock-free algorithm.
+Slower than ArrayDeque in single-threaded scenarios.
+4. Using LinkedBlockingDeque (Thread-safe with capacity)
+java
+Copy
+Edit
+Deque<Integer> deque = new LinkedBlockingDeque<>(10);
+Thread-safe and bounded (fixed capacity).
+Uses locks internally.
+Useful for multi-threaded producer-consumer problems.
+
+
+
+
+SORTING IS KNOWNS AS PRIORITY QUEUE

@@ -1,0 +1,19 @@
+leetcode 347  top k frequent elements 
+hashmap to store frequency 
+
+comparator to sort priority queue according to freqency (priority queue of hashmap )
+
+we can make priority queue of any data structure  we can even make priority queue of hashmap
+
+travel hashmap and push each key-value to priority queue 
+remove and print first
+
+
+we make comparator that sort using frequency --
+
+1 , -1, 0 comparator 
+
+
+hashmap comparator ---
+PriorityQueue <HashMap<Integer,Integer>>pq
+new PriorityQueue<>((a,b)-----b.getValue().compareTo(a.getValue()));
