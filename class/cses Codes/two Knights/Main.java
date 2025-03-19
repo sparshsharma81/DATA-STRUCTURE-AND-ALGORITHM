@@ -1,7 +1,7 @@
 // package DATA-STRUCTURE-AND-ALGORITHM.class.cses Codes;
 import java.util.*;
 
-public class two_knights {
+public class Main {
     public static void main(String[] args) {
         /*
          the total number of ways two nights can be placed in chess is 
@@ -15,9 +15,21 @@ public class two_knights {
 
 
          Scanner sc= new Scanner(System.in);
-         int a =sc.nextInt();
+         long a =sc.nextLong();
+        //  for(int i=0;i<a;i++){
+        //     long n2 = (long) 4 * (a-1) * (a-2);
+        //     long n = (long) a * a * ((a)*(a-1)) /2 ;
+        //     System.out.println(n-n2);
+
+        //  }
+        for(long i=1;i<=a;i++){
+            long n1 = 4 * (i -1) * (i-2);
+            long n2 = (i * i) * (i* i -1 )/2;
+            System.out.println(n2 - n1);
+
          
 
     }
+}
     
 }

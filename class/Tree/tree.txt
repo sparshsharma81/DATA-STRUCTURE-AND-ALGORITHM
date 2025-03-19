@@ -1,0 +1,12 @@
+for a binary TREE 
+
+number of nodes are --- (2^h) -1  --- h start fromm 0
+
+height = log(n+1)-base2
+
+
+
+BST --- BINARY SEARCH TREE 
+root's left will be smaller than root's value
+
+root's right will be larger than roots's value
