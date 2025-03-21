@@ -10,3 +10,14 @@ BST --- BINARY SEARCH TREE
 root's left will be smaller than root's value
 
 root's right will be larger than roots's value
+
+
+
+
+heap --- minheap: both children(if they exist) --- are greater than the parent
+maxheap ---- both children (if they exis) are smaller than the parent 
+
+
+balanced , unbalanced trees
+
+full , complete, binary tree and heap
