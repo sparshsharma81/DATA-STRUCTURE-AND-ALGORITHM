@@ -1,0 +1,10 @@
+in order to delete a node in tree;
+find the correct node[node to be deleted]
+
+then check for edge cases;
+node with 0 child --- 
+node with either left or right child --- directly replace with next available child
+node having both children
+find the smallest node in right subtree(say sn)
+sn.left = root.left 
+return the root of right subtree 
