@@ -12,6 +12,7 @@ public class implementation_tree{
         root.val = 10; //ban gaya node
 
         System.out.println(root.val);
+        //this will print the value of tree
 
     }
 }
