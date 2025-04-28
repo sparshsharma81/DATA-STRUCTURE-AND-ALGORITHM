@@ -8,7 +8,7 @@ class Node {
     }
 }
 
-public class deletion {
+public class BinarySearchTree {
     Node root;
 
     private Node findMin(Node root) {
@@ -33,7 +33,7 @@ public class deletion {
 
             Node temp = findMin(root.right);
             root.data = temp.data;
-            root.right = deleteNode(root.right, temp.data);  // Fix: use temp.data here
+            root.right = deleteNode(root.right, temp.data);
         }
 
         return root;
@@ -48,24 +48,22 @@ public class deletion {
     }
 
     public static void main(String args[]) {
-        deletion1 tree = new deletion1();
+        BinarySearchTree bst = new BinarySearchTree();
 
-        // Inserting nodes to form a BST
-        tree.root = new Node(50);
-        tree.root.left = new Node(30);
-        tree.root.right = new Node(70);
-        tree.root.left.left = new Node(20);
-        tree.root.left.right = new Node(40);
-        tree.root.right.left = new Node(60);
-        tree.root.right.right = new Node(80);
+        bst.root = new Node(50);
+        bst.root.left = new Node(30);
+        bst.root.right = new Node(70);
+        bst.root.left.left = new Node(20);
+        bst.root.left.right = new Node(40);
+        bst.root.right.left = new Node(60);
+        bst.root.right.right = new Node(80);
 
         System.out.println("Inorder of the tree before deletion:");
-        tree.inorder(tree.root);
+        bst.inorder(bst.root);
 
-        // Deleting node with two children (50)
-        tree.root = tree.deleteNode(tree.root, 50);
+        bst.root = bst.deleteNode(bst.root, 50);
 
         System.out.println("\nInorder after deleting 50:");
-        tree.inorder(tree.root);
+        bst.inorder(bst.root);
     }
 }
