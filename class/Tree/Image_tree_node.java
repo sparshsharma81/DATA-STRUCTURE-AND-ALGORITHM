@@ -43,8 +43,9 @@ public class Image_tree_node {
           root2.right = new TreeNode(2);
           root2.right.left = new TreeNode(4);
           root2.right.right= new TreeNode(3);
+          System.out.println();
           System.out.print(isMirror(root,root2));
-|
+System.out.println();
 
 
     }
